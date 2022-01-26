@@ -110,6 +110,7 @@ const Login = () => {
               </Box>
               <Box sx={{ textAlign: "center", pt: 5 }}>
                 <button
+                className="loginbtn"
                   style={{
                     padding: "15px 40px",
                     fontWeight: "bold",
@@ -126,6 +127,7 @@ const Login = () => {
             <Box sx={{ textAlign: "center", pt: 2 }}>
               <button
                 onClick={handleGoogleLogin}
+                className="loginbtn"
                 style={{
                   padding: "15px 40px",
                   fontWeight: "bold",
@@ -223,6 +225,7 @@ const Login = () => {
               </Box>
               <Box sx={{ textAlign: "center", pt: 4 }}>
                 <button
+                className="loginbtn"
                   style={{
                     padding: "15px 40px",
                     fontWeight: "bold",

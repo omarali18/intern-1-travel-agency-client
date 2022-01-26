@@ -4,6 +4,13 @@
   padding: 3%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.loginbtn {
+  background-color: rgb(139, 81, 70);
+  color: white;
+}
+.loginbtn:hover {
+  background-color: rgb(110, 110, 46);
+}
 @media only screen and (max-width: 750px) {
   .form-container {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
