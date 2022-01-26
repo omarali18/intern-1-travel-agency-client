@@ -24,7 +24,8 @@ const Appbar = () => {
     </Nav> */}
     <Nav>
       <Nav.Link ><NavLink to="/" className="linkis">Home</NavLink></Nav.Link>
-      <Nav.Link ><NavLink to="/contact" className="linkis">Contact</NavLink></Nav.Link>
+      <Nav.Link ><NavLink to="/addExperience" className="linkis">AddExperience</NavLink></Nav.Link>
+      <Nav.Link ><NavLink to="/dashboard" className="linkis">Dashboard</NavLink></Nav.Link>
       <Nav.Link ><NavLink to="/login" className="linkis">Login</NavLink></Nav.Link>
       {/* <Nav.Link href="#deets">More deets</Nav.Link>
       <Nav.Link eventKey={2} href="#memes">

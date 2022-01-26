@@ -5,6 +5,11 @@ import Contact from "./pages/Home/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Appbar from "./pages/Shared/Appbar/Appbar";
 import Login from "./pages/Login/Login/login";
+import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
+import DashboardHome from "./pages/Dashboard/DashboardHome/DashboardHome";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
+import AddBlog from "./pages/Dashboard/AddBlog/AddBlog";
+import AddExperience from "./pages/AddExperience/AddExperience";
 
 function App() {
   return (
@@ -14,7 +19,25 @@ function App() {
         <Appbar/>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="/addExperience" element={<AddExperience />} />
+            <Route path="/dashboard" element={<Dashboard />} >
+            {/* <Route path="/dashboard" element={<PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>} > */}
+
+              <Route path="/dashboard" element={<DashboardHome />} />
+
+              <Route path="/dashboard/makeAdmin" element={<MakeAdmin />} />
+              {/* <Route path="/dashboard/makeAdmin" element={<AdminRoute>
+                <MakeAdmin />
+              </AdminRoute>} /> */}
+
+              <Route path="/dashboard/addBlog" element={<AddBlog />} />
+              {/* <Route path="/dashboard/addDoctor" element={<AdminRoute>
+                <AddBlog />
+              </AdminRoute>} /> */}
+
+            </Route>
             {/* <Route path="/cart" element={<Cart />} /> */}
             {/* <Route path="/wishlist" element={<Wishlisht />} /> */}
             {/* <Route path="/about" element={<About />} /> */}
