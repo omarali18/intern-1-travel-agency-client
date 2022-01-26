@@ -1,0 +1,116 @@
+#banner {
+  background: linear-gradient(
+      rgba(247, 169, 68, 0.37) 100%,
+      rgba(0, 0, 0, 0.39) 100%
+    ),
+    url("./image/cb1.jpg");
+  background-color: #6db3f2;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+#main-banner {
+  width: 90%;
+  height: 450px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+}
+#first-img {
+  display: flex;
+  width: 220vh;
+  padding-right: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+#second-img {
+  display: flex;
+  width: 220vh;
+  padding-left: 150px;
+  padding-right: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+#first-img img {
+  width: 40%;
+  height: 450px;
+}
+#second-img img {
+  width: 50%;
+  height: 450px;
+}
+
+#caption {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  width: 50%;
+}
+button {
+  background-color: #7a2706;
+  border: 0px;
+  opacity: 0.6;
+  padding: 7px 40px;
+  transition: all 0.45s ease-out;
+}
+button a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  background-color: orange;
+  opacity: 0.7;
+}
+button:hover a {
+  color: black;
+}
+
+/*------------------- THIS IS TEH END OF HOME BANNER -------------------  */
+
+/*------------------- THIS IS FOR THE STARTING OF SHOW OF -------------------  */
+
+#show-off {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+#shoe_bag {
+  display: flex;
+}
+.show_of_style {
+  width: 400px;
+  height: 200px;
+  background-color: #9fa3a221;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  display: flex;
+}
+#show_of_main_img {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* #first-img {
+      display: block;
+    }
+    #first-img {
+      width: 0%;
+    }
+    #caption {
+      width: 100%;
+    } */
+  #second-img {
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+}
