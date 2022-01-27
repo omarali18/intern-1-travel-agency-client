@@ -9,11 +9,12 @@ import DashboardHome from "./pages/Dashboard/DashboardHome/DashboardHome";
 import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import AddBlog from "./pages/Dashboard/AddBlog/AddBlog";
 import AddExperience from "./pages/AddExperience/AddExperience";
+import AuthProvider from "./context/AuthProvider";
 
 function App() {
   return (
     <div className="">
-      {/* <AuthProvider> */}
+      <AuthProvider>
         <Router>
         <Appbar/>
           <Routes>
@@ -44,11 +45,7 @@ function App() {
           </Routes>
           {/* <Footer /> */}
         </Router>
-      {/* </AuthProvider> */}
-
-      {/* <Appbar/> */}
-      {/* <Home/>
-      <Contact/> */}
+      </AuthProvider>
     </div>
   );
 }

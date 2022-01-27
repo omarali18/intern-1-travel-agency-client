@@ -1,12 +1,14 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
 import "./Appbar.css"
 
 const Appbar = () => {
+  const {user,handleLogout} = useAuth()
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <>
+            <Navbar collapseOnSelect expand="lg"  className='appbar' variant="light" sticky='top'>
   <Container>
   {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -26,7 +28,10 @@ const Appbar = () => {
       <Nav.Link ><NavLink to="/" className="linkis">Home</NavLink></Nav.Link>
       <Nav.Link ><NavLink to="/addExperience" className="linkis">AddExperience</NavLink></Nav.Link>
       <Nav.Link ><NavLink to="/dashboard" className="linkis">Dashboard</NavLink></Nav.Link>
-      <Nav.Link ><NavLink to="/login" className="linkis">Login</NavLink></Nav.Link>
+      {
+        user.email ? <Button variant="outline-dark" onClick={handleLogout}>LogOut</Button> : <Nav.Link ><NavLink to="/login" className="linkis">Login</NavLink></Nav.Link>
+      }
+      {/* <Nav.Link ><NavLink to="/login" className="linkis">Login</NavLink></Nav.Link> */}
       {/* <Nav.Link href="#deets">More deets</Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
         Dank memes
@@ -35,7 +40,7 @@ const Appbar = () => {
   </Navbar.Collapse>
   </Container>
 </Navbar>
-        </div>
+        </>
     );
 };
 

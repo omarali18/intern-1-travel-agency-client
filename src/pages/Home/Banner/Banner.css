@@ -50,9 +50,9 @@
   width: 50%;
 }
 button {
-  background-color: #7a2706;
+  background-color: rgb(139, 81, 70);
   border: 0px;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   padding: 7px 40px;
   transition: all 0.45s ease-out;
 }
@@ -64,8 +64,8 @@ button a {
   color: white;
 }
 button:hover {
-  background-color: orange;
-  opacity: 0.7;
+  background-color: rgb(110, 110, 46);
+  /* opacity: 0.7; */
 }
 button:hover a {
   color: black;

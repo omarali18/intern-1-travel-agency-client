@@ -10,13 +10,13 @@ import {
 import Box from "@mui/material/Box";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./login.css";
-// import useAuth from "../../../Hooks/useAuth";
+import useAuth from "../../../Hooks/useAuth";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({});
   const [register, setRegister] = useState({});
   const [error, setError] = useState("");
-//   const { loginByGoogle, loginEmailPassword, handleRegistetion } = useAuth();
+  const { loginByGoogle, loginEmailPassword, handleRegistetion } = useAuth();
 
   const location = useLocation();
   const redirect = location?.state?.from || "/";
@@ -62,7 +62,7 @@ const Login = () => {
   };
 
   const handleGoogleLogin = () => {
-    // loginByGoogle(redirect, navigate);
+    loginByGoogle(redirect, navigate);
   };
 
   return (

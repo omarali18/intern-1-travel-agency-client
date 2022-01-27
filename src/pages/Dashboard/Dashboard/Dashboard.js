@@ -47,15 +47,10 @@ function Dashboard(props) {
                     </ListItemIcon>
                     <ListItemText primary="Home" />
                 </ListItem></Link>
-                <Link style={{ textDecoration: 'none', color: 'gray' }} to="/Appointment"><ListItem button>
-                    <ListItemIcon>
-                        {/* <HomeIcon color="primary" /> */}
-                    </ListItemIcon>
-                    <ListItemText primary="Appointment" />
-                </ListItem></Link>
+               
                 <Link style={{ textDecoration: 'none', color: 'gray' }} to="/dashboard"><ListItem button>
                     <ListItemIcon>
-                        <HomeIcon color="primary" />
+                        {/* <HomeIcon color="primary" /> */}
                     </ListItemIcon>
                     <ListItemText primary="Dashboard" />
                 </ListItem></Link>
@@ -77,14 +72,14 @@ function Dashboard(props) {
                     </Box>
                 } */}
                  <Link style={{ textDecoration: 'none', color: 'gray' }} to="/dashboard/makeAdmin"><ListItem button>
-                    <ListItemIcon>
-                        {/* <HomeIcon color="primary" /> */}
+                        <ListItemIcon>
+                            {/* <HomeIcon color="primary" /> */}
                         </ListItemIcon>
                         <ListItemText primary="Make Admin" />
                     </ListItem>
                 </Link>
                 <Link style={{ textDecoration: 'none', color: 'gray' }} to="/dashboard/addBlog"><ListItem button>
-                    <ListItemIcon>
+                        <ListItemIcon>
                         {/* <HomeIcon color="primary" /> */}
                         </ListItemIcon>
                         <ListItemText primary="Add Doctor" />
