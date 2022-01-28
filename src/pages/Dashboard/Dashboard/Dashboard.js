@@ -15,7 +15,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import SvgIcon from '@mui/material/SvgIcon';
 import { Link, Outlet } from 'react-router-dom';
-// import useAuth from '../../../Hooks/useAuth';
+import { Button } from 'react-bootstrap';
+import useAuth from '../../../Hooks/useAuth';
 
 const drawerWidth = 240;
 function HomeIcon(props) {
@@ -29,7 +30,7 @@ function HomeIcon(props) {
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    // const { admin } = useAuth()
+    const { handleLogout } = useAuth()
 
 
     const handleDrawerToggle = () => {
@@ -85,6 +86,14 @@ function Dashboard(props) {
                         <ListItemText primary="Add Doctor" />
                     </ListItem>
                 </Link>
+
+                <Link style={{ textDecoration: 'none', color: 'gray' }} to="/"><ListItem button>
+                    <ListItemIcon>
+                        {/* <HomeIcon color="primary" /> */}
+                    </ListItemIcon>
+                    {/* <ListItemText primary="Home" /> */}
+                    <Button variant="outline-dark" onClick={handleLogout}>LogOut</Button>
+                </ListItem></Link>
 
 
             </List>

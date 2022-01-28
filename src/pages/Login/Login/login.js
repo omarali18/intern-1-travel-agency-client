@@ -39,24 +39,25 @@ const Login = () => {
   };
 
   const handleOnSubmitLogin = (e) => {
-    // console.log("loginnnn", loginData.email, loginData.password,);
-    // loginEmailPassword(loginData.email, loginData.password, redirect, navigate);
+    console.log("loginnnn", loginData.email, loginData.password,);
+    loginEmailPassword(loginData.email, loginData.password, redirect, navigate);
     e.preventDefault();
   };
 
   const handleOnSubmitRegister = (e) => {
-    console.log(register);
+    
     if (register.password !== register.password2) {
       setError("Password not match..!!");
       return;
     } else {
       setError("");
-    //   handleRegistetion(
-    //     register.email,
-    //     register.password,
-    //     register.name,
-    //     navigate
-    //   );
+      console.log("register hited");
+      handleRegistetion(
+        register.email,
+        register.password,
+        register.name,
+        navigate
+      );
     }
     e.preventDefault();
   };
