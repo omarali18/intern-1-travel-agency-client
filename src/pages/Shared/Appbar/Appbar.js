@@ -31,7 +31,7 @@ const Appbar = () => {
       {
         user.email ? <Button variant="outline-dark" onClick={handleLogout}>LogOut</Button> : <Nav.Link ><NavLink to="/login" className="linkis">Login</NavLink></Nav.Link>
       }
-      {/* <Nav.Link ><NavLink to="/login" className="linkis">Login</NavLink></Nav.Link> */}
+      
       {/* <Nav.Link href="#deets">More deets</Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
         Dank memes

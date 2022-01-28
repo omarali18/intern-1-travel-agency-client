@@ -10,6 +10,8 @@ import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
 import AddBlog from "./pages/Dashboard/AddBlog/AddBlog";
 import AddExperience from "./pages/AddExperience/AddExperience";
 import AuthProvider from "./context/AuthProvider";
+import SingleExperiences from "./pages/SingleExperiences/SingleExperiences";
+import Footer from "./pages/Shared/Footer/Footer";
 
 function App() {
   return (
@@ -18,8 +20,14 @@ function App() {
         <Router>
         <Appbar/>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route  path="/" element={<Home />} />
+            {/* <Route path="/heme" element={<Home />} >
+            <Route path=":singleExperience" element={<SingleExperiences />} />
+              </Route> */}
             <Route path="/addExperience" element={<AddExperience />} />
+
+            <Route path="/singleExperience/:id" element={<SingleExperiences />} />
+
             <Route path="/dashboard" element={<Dashboard />} >
             {/* <Route path="/dashboard" element={<PrivateRoute>
               <Dashboard />
@@ -43,7 +51,7 @@ function App() {
             {/* <Route path="/about" element={<About />} /> */}
             <Route path="/login" element={<Login />} />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
       </AuthProvider>
     </div>

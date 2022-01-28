@@ -71,34 +71,6 @@ button:hover a {
   color: black;
 }
 
-/*------------------- THIS IS TEH END OF HOME BANNER -------------------  */
-
-/*------------------- THIS IS FOR THE STARTING OF SHOW OF -------------------  */
-
-#show-off {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-#shoe_bag {
-  display: flex;
-}
-.show_of_style {
-  width: 400px;
-  height: 200px;
-  background-color: #9fa3a221;
-  align-items: center;
-  padding: 5px 15px;
-  margin: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-
-  display: flex;
-}
-#show_of_main_img {
-  margin-top: 15px;
-}
-
 @media only screen and (max-width: 600px) {
   /* #first-img {
       display: block;

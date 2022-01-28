@@ -1,0 +1,74 @@
+.footer-container {
+  background-color: #013a5d;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.footer-container h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.footer-qsn {
+  border-bottom: 1px solid lightgray;
+  width: 60%;
+  margin: 0 auto;
+}
+.contact-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  color: #7592ee;
+  font-size: 18px;
+}
+.footer-deatel {
+  width: 60%;
+  margin: 0 auto;
+}
+.visitor-information {
+  text-decoration: none;
+}
+.job-offers {
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #013a5d;
+  color: white;
+  font-size: 15px;
+}
+.job-offers:hover {
+  background-color: #7592ee;
+  color: white;
+}
+.ancor,
+.visits {
+  text-decoration: none;
+  color: gray;
+  letter-spacing: 1px;
+  /* line-height: 0px; */
+}
+.ancor:hover {
+  color: white;
+}
+.display {
+  text-decoration: none;
+  color: white;
+}
+.social-media i {
+  color: white;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.Copyright {
+  text-align: center;
+  background-color: black;
+  color: gray;
+  padding: 20px;
+}
+@media only screen and (max-width: 540px) {
+  .footer-deatel,
+  .footer-qsn {
+    width: 90%;
+  }
+}

@@ -18,9 +18,12 @@
   /* border: 3px solid red; */
   color: rgb(77, 77, 10);
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .linkText:hover {
-  color: rgb(87, 49, 42);
+  color: rgb(82, 82, 224);
   /* border: 3px solid red; */
+}
+.smallText {
+  color: rgb(0, 146, 0);
 }
