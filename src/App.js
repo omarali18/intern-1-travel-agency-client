@@ -13,6 +13,7 @@ import AuthProvider from "./context/AuthProvider";
 import SingleExperiences from "./pages/SingleExperiences/SingleExperiences";
 import Footer from "./pages/Shared/Footer/Footer";
 import PrivateRoute from "./pages/Login/Login/PrivateRoute/PrivateRoute";
+import AdminRoute from "./pages/Login/AdminRoute/AdminRoute";
 
 function App() {
   return (
@@ -22,34 +23,18 @@ function App() {
         <Appbar/>
           <Routes>
             <Route  path="/" element={<Home />} />
-            {/* <Route path="/heme" element={<Home />} >
-            <Route path=":singleExperience" element={<SingleExperiences />} />
-              </Route> */}
             <Route path="/addExperience" element={<AddExperience />} />
-
+            
             <Route path="/singleExperience/:id" element={<PrivateRoute> <SingleExperiences /></PrivateRoute>} />
 
             <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} >
-            {/* <Route path="/dashboard" element={<PrivateRoute>
-              <Dashboard />
-            </PrivateRoute>} > */}
 
               <Route path="/dashboard" element={<DashboardHome />} />
-
-              <Route path="/dashboard/makeAdmin" element={<MakeAdmin />} />
-              {/* <Route path="/dashboard/makeAdmin" element={<AdminRoute>
-                <MakeAdmin />
-              </AdminRoute>} /> */}
-
+              <Route path="/dashboard/makeAdmin" element={<AdminRoute><MakeAdmin /></AdminRoute> } />
               <Route path="/dashboard/addBlog" element={<AddBlog />} />
-              {/* <Route path="/dashboard/addDoctor" element={<AdminRoute>
-                <AddBlog />
-              </AdminRoute>} /> */}
 
             </Route>
-            {/* <Route path="/cart" element={<Cart />} /> */}
-            {/* <Route path="/wishlist" element={<Wishlisht />} /> */}
-            {/* <Route path="/about" element={<About />} /> */}
+
             <Route path="/login" element={<Login />} />
           </Routes>
           <Footer />

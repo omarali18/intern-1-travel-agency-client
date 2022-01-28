@@ -11,7 +11,7 @@ const Experienceses = () => {
     const size = 10;
 
     useEffect( ()=>{
-        fetch(`http://localhost:5000/experiences?page=${page}&&size=${size}`)
+        fetch(`https://secure-fortress-87123.herokuapp.com/experiences?page=${page}&&size=${size}`)
         .then(res => res.json())
         .then(data=> {
             setExperienceses(data.experiences)

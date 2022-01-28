@@ -11,7 +11,7 @@ const SingleExperiences = () => {
     const {name,img,description,booking, placeRank, cost, rating, _id} = singleExp
 
     useEffect( ()=>{
-        fetch(`http://localhost:5000/experiences/${id}`)
+        fetch(`https://secure-fortress-87123.herokuapp.com/experiences/${id}`)
         .then(res => res.json())
         .then(data => {
             setSingleExp(data)

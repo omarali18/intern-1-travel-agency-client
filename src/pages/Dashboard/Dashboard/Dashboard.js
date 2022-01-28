@@ -30,7 +30,7 @@ function HomeIcon(props) {
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const { handleLogout } = useAuth()
+    const { handleLogout,admin } = useAuth()
 
 
     const handleDrawerToggle = () => {
@@ -55,37 +55,23 @@ function Dashboard(props) {
                     </ListItemIcon>
                     <ListItemText primary="Dashboard" />
                 </ListItem></Link>
-                {/* {
+                {
                     admin && <Box>
                         <Link style={{ textDecoration: 'none', color: 'gray' }} to="/dashboard/makeAdmin"><ListItem button>
                             <ListItemIcon>
-                                <HomeIcon color="primary" />
+                                {/* <HomeIcon color="primary" /> */}
                             </ListItemIcon>
                             <ListItemText primary="Make Admin" />
                         </ListItem></Link>
-                        <Link style={{ textDecoration: 'none', color: 'gray' }} to="/dashboard/addDoctor"><ListItem button>
+                        <Link style={{ textDecoration: 'none', color: 'gray' }} to="/dashboard/addBlog"><ListItem button>
                             <ListItemIcon>
-                                <HomeIcon color="primary" />
+                                {/* <HomeIcon color="primary" /> */}
                             </ListItemIcon>
-                            <ListItemText primary="Add Doctor" />
+                            <ListItemText primary="Add Blog" />
                         </ListItem></Link>
 
                     </Box>
-                } */}
-                 <Link style={{ textDecoration: 'none', color: 'gray' }} to="/dashboard/makeAdmin"><ListItem button>
-                        <ListItemIcon>
-                            {/* <HomeIcon color="primary" /> */}
-                        </ListItemIcon>
-                        <ListItemText primary="Make Admin" />
-                    </ListItem>
-                </Link>
-                <Link style={{ textDecoration: 'none', color: 'gray' }} to="/dashboard/addBlog"><ListItem button>
-                        <ListItemIcon>
-                        {/* <HomeIcon color="primary" /> */}
-                        </ListItemIcon>
-                        <ListItemText primary="Add Doctor" />
-                    </ListItem>
-                </Link>
+                }
 
                 <Link style={{ textDecoration: 'none', color: 'gray' }} to="/"><ListItem button>
                     <ListItemIcon>

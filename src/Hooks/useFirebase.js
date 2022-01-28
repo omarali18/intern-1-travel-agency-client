@@ -110,7 +110,7 @@ const useFirebase = ()=>{
     let emailIs = user.email;
     if (emailIs) {
 
-        fetch(`http://localhost:5000/users/${emailIs}`)
+        fetch(`https://secure-fortress-87123.herokuapp.com/users/${emailIs}`)
             .then(res => res.json())
             .then(data => {
                 setAdmin(data.admin)
@@ -133,7 +133,7 @@ const useFirebase = ()=>{
    // save user in database
    const saveUsers = (email, displayName, method, Password = "", navigate, location = "/") => {
     const user = { email, displayName, Password }
-    fetch("http://localhost:5000/users", {
+    fetch("https://secure-fortress-87123.herokuapp.com/users", {
         method: method,
         headers: {
             "content-type": "application/json"
@@ -152,6 +152,7 @@ const useFirebase = ()=>{
 
     return {
         user,
+        admin,
         authError,
         isLoading,
         handleRegistetion,
